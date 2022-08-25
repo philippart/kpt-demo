@@ -3,6 +3,9 @@ kind: RoleBinding
 metadata:
   name: app-admin
   namespace: istions
+  labels:
+    color: orange
+    fruit: apple
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole

@@ -4,5 +4,8 @@ metadata:
   name: kptfile.kpt.dev
   annotations:
     config.kubernetes.io/local-config: "true"
+  labels:
+    color: orange
+    fruit: apple
 data:
   name: istions

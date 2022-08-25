@@ -3,6 +3,9 @@ kind: ResourceQuota
 metadata:
   name: default
   namespace: istions
+  labels:
+    color: orange
+    fruit: apple
 spec:
   hard:
     cpu: "40"

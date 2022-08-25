@@ -4,6 +4,9 @@ metadata:
   name: update-rolebinding
   annotations:
     config.kubernetes.io/local-config: "true"
+  labels:
+    color: orange
+    fruit: apple
 replacements:
 - source:
     kind: ConfigMap
@@ -16,5 +19,5 @@ replacements:
     fieldPaths:
     - subjects.[kind=Group].name
     options:
-      delimiter: '.'
+      delimiter: .
       index: 0

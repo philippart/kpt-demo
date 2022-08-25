@@ -4,6 +4,9 @@ metadata:
   name: istions
   annotations:
     config.kubernetes.io/local-config: "true"
+  labels:
+    color: orange
+    fruit: apple
 upstream:
   type: git
   git:
@@ -25,3 +28,7 @@ pipeline:
     configPath: package-context.yaml
   - image: gcr.io/kpt-fn/apply-replacements:v0.1.1
     configPath: update-rolebinding.yaml
+  - image: gcr.io/kpt-fn/set-labels:v0.1.5
+    configMap:
+      color: orange
+      fruit: apple
