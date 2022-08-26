@@ -20,8 +20,8 @@ spec:
               properties:
                 category:
                   type: string
-                  pattern: "road|mountain|city|electric"
-                  default: "road"
+                  pattern: 'road|mountain|city|electric'
+                  default: 'road'
                 brand:
                   type: string
                 model:
@@ -31,8 +31,8 @@ spec:
                   default: 2022
                 weight:
                   type: string
-                  pattern: "\d+\.?\d*"
-                  default: "10.0"
+                  pattern: '\d+\.?\d*'
+                  default: '10.0'
   scope: Namespaced
   names:
     plural: bikes
