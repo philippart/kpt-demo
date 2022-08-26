@@ -1,0 +1,11 @@
+kind: Bike
+apiVersion: example.com/v1
+metadata:
+  name: tarmac
+  namespace: bikes
+spec:
+  category: "road"
+  brand: "Specialized"
+  model: "Tarmac SL7 Expert"
+  year: 2022
+  weight: "6.7"

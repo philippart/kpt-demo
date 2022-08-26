@@ -1,0 +1,9 @@
+kind: ClusterRole
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: bikes-admin
+rules:
+- apiGroups: ["example.com"]
+  resources: ["bikes"]
+  verbs:
+  - "*"
