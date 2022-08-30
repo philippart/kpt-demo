@@ -1,0 +1,11 @@
+kind: Bike
+apiVersion: example.com/v1
+metadata:
+  name: xelius
+  namespace: bikes
+spec:
+  category: "road"
+  brand: "Lapierre"
+  model: "Xelius SL3 9.0"
+  year: 2022
+  weight: "6.8"
