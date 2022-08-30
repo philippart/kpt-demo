@@ -1,0 +1,15 @@
+apiVersion: configsync.gke.io/v1alpha1
+kind: RepoSync
+metadata:
+  name: cluster-repo-sync
+  namespace: config-management-system
+spec:
+  sourceFormat: unstructured
+  git:
+    repo: https://github.com/philippart/kpt-demo/
+    branch: main
+    dir: clusters
+    auth: token
+    proxy: http://135.245.192.7:8000
+    secretRef:
+      name: gh-creds
