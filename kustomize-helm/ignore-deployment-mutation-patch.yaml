@@ -1,0 +1,7 @@
+# ./ignore-deployment-mutation-patch.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: any
+  annotations:
+    client.lifecycle.config.k8s.io/mutation: ignore
