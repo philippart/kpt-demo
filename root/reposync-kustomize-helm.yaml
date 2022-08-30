@@ -1,7 +1,7 @@
 apiVersion: configsync.gke.io/v1alpha1
 kind: RepoSync
 metadata:
-  name: cert-repo-sync
+  name: cert-sync
   namespace: cert-manager
 spec:
   sourceFormat: unstructured
