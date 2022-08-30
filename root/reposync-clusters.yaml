@@ -2,7 +2,7 @@ apiVersion: configsync.gke.io/v1alpha1
 kind: RepoSync
 metadata:
   name: cluster-repo-sync
-  namespace: config-management-system
+  namespace: default
 spec:
   sourceFormat: unstructured
   git:
