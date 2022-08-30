@@ -14,6 +14,6 @@ Cloned from config-sync quickstart demo (ACM samples) to illustrate config-sync 
 
 Demonstrate cluster labels and cluster selectors (but only have 1 cluster).
 
-## Kustomize and Helm
+## Cert-Manager
 
-Demonstrate config-synch rendering of kustomize and helm chart (cert-manager example).
+Demonstrate config-synch rendering of cert-manager helm chart with kustomize.
