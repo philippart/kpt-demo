@@ -1,5 +1,6 @@
-apiVersion: configsync.gke.io/v1alpha1
-kind: RepoSync
+# this must be a rootsync repo since the cert-manager helm chart creates both namespace and cluster resources (e.g. cluster roles and role bindings)
+apiVersion: configsync.gke.io/v1beta1
+kind: RootSync
 metadata:
   name: cert-sync
   namespace: cert-manager
