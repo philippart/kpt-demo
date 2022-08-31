@@ -13,3 +13,9 @@ spec:
     proxy: http://135.245.192.7:8000
     secretRef:
       name: gh-creds
+  override:
+    resources:
+      - containerName: git-sync
+        memoryRequest: "100Mi"
+      - containerName: reconciler
+        memoryRequest: "100Mi"
