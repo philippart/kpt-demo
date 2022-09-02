@@ -3,6 +3,8 @@ apiVersion: eso.org/v1alpha1
 metadata:
   name: einstein-cross
   namespace: quasars
+  annotations:
+    configmanagement.gke.io/cluster-selector: selector-pegasus
 spec:
   name: "Einstein Cross"
   constellation: "Pegasus"
