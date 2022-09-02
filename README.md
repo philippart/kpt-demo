@@ -13,6 +13,7 @@ Cloned from config-sync quickstart demo (ACM samples) to illustrate config-sync 
 ## Clusters
 
 Demonstrate cluster labels and cluster selectors (but only have 1 cluster).
+Demonstrate quasars custom resources in a separate reposync.
 
 ## Cert-Manager
 
