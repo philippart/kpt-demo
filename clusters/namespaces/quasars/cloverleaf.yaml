@@ -1,0 +1,12 @@
+kind: Quasar
+apiVersion: eso.org/v1alpha1
+metadata:
+  name: cloverleaf
+  namespace: quasars
+spec:
+  name: "Cloverleaf Quasar"
+  constellation: "Bootes"
+  type: "Rad"
+  redshift: "2.56"
+  apparentMagnitude: "17"
+  discoveryYear: 1988

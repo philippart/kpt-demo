@@ -1,0 +1,12 @@
+kind: Quasar
+apiVersion: eso.org/v1alpha1
+metadata:
+  name: twin-quasar
+  namespace: quasars
+spec:
+  name: "Twin Quasar"
+  constellation: "Ursa Major"
+  type: "Rad"
+  redshift: "1.413"
+  apparentMagnitude: "16.7"
+  discoveryYear: 1979

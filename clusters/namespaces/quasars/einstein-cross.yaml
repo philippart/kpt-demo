@@ -1,0 +1,12 @@
+kind: Quasar
+apiVersion: eso.org/v1alpha1
+metadata:
+  name: einstein-cross
+  namespace: quasars
+spec:
+  name: "Einstein Cross"
+  constellation: "Pegasus"
+  type: "LeQ"
+  redshift: "1.695"
+  apparentMagnitude: "16.78"
+  discoveryYear: 1985
