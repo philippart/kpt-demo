@@ -15,6 +15,7 @@ spec:
     secretRef:
       name: gh-creds
   override:
+    enableShellInRendering: true
     resources:
       - containerName: git-sync
         memoryRequest: "100Mi"
