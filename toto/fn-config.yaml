@@ -1,9 +1,0 @@
-apiVersion: v1
-kind: ConfigMap
-metadata: # kpt-merge: /search-replace-fn-config
-  name: search-replace-fn-config
-  labels:
-    env: dev
-data:
-  by-path: spec.**.app
-  put-value: my-nginx
