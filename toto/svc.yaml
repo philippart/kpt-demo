@@ -17,10 +17,12 @@ metadata: # kpt-merge: /my-nginx-svc
   name: my-nginx-svc
   labels:
     app: nginx
+    env: dev
 spec:
   type: LoadBalancer
   selector:
     app: my-nginx
+    env: dev
   ports:
   - protocol: TCP
     port: 80
