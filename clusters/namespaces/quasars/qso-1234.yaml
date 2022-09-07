@@ -1,0 +1,12 @@
+kind: Quasar
+apiVersion: eso.org/v1alpha1
+metadata:
+  name: qso-1234
+  namespace: quasars
+spec:
+  name: "Yet to be discovered"
+  constellation: "Ursa Mayor"
+  type: "Rad"
+  redshift: "5.5"
+  apparentMagnitude: "10"
+  discoveryYear: 2028
