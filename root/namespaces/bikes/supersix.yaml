@@ -1,0 +1,11 @@
+kind: Bike
+apiVersion: example.com/v1
+metadata:
+  name: supersix
+  namespace: bikes
+spec:
+  category: "road"
+  brand: "Cannondale"
+  model: "Supersix evo"
+  year: 2022
+  weight: "7.4"
