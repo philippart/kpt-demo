@@ -1,8 +1,8 @@
 apiVersion: configsync.gke.io/v1alpha1
 kind: RepoSync
 metadata:
-  name: cluster-sync
-  namespace: quasars
+  name: nginx-sync
+  namespace: nginx
 spec:
   sourceFormat: unstructured
   git:
