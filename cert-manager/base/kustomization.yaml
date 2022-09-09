@@ -2,7 +2,7 @@
 helmCharts:
 - name: cert-manager-crds
   repo: https://repo.cci.nokia.net/artifactory/csf-helm-stable/
-  version: 1.0.5
+  version: 2.0.6
   releaseName: cm-crds
   namespace: cert-manager
 - name: cert-manager
