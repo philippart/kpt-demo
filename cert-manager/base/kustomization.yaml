@@ -7,4 +7,4 @@ helmCharts:
   namespace: cert-manager
   valuesInline:
     ingress:
-      enabled: "false"
+      enabled: false
