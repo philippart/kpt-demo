@@ -1,0 +1,12 @@
+apiVersion: fn.kpt.dev/v1alpha1
+kind: RenderHelmChart
+metadata:
+  name: citm
+helmCharts:
+- chartArgs:
+    name: citm-server
+    version: 1.22.0
+    repo: https://repo.cci.nokia.net/artifactory/csf-helm-stable/
+  templateOptions:
+    releaseName: citm
+    namespace: citm

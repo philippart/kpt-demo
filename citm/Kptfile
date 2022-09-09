@@ -5,4 +5,10 @@ metadata:
   annotations:
     config.kubernetes.io/local-config: "true"
 info:
-  description: citm description
+  description: kpt package for citm-server deployment
+pipeline:
+  mutators:
+  - image: gcr.io/kpt-fn/set-namespace:v0.4.1
+    configPath: package-context.yaml
+  - image: gcr.io/kpt-fn/render-helm-chart:v0.2.0
+    configPath: render-helm-config.yaml
