@@ -1,16 +1,16 @@
-# citm-server
+# citm
 
 ## Description
-kpt package for citm-server deployment
+citm description
 
 ## Usage
 
 ### Fetch the package
-`kpt pkg get REPO_URI[.git]/PKG_PATH[@VERSION] minecraft`
+`kpt pkg get REPO_URI[.git]/PKG_PATH[@VERSION] citm`
 Details: https://kpt.dev/reference/cli/pkg/get/
 
 ### View package content
-`kpt pkg tree minecraft`
+`kpt pkg tree citm`
 Details: https://kpt.dev/reference/cli/pkg/tree/
 
 ### Apply the package
