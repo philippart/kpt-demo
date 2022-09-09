@@ -1,4 +1,4 @@
-# minecraft
+# citm-server
 
 ## Description
 kpt package for citm-server deployment
