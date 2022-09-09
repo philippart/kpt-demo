@@ -16,6 +16,7 @@ metadata:
     app.kubernetes.io/managed-by: "helm"
     app.kubernetes.io/part-of: "citm"
   name: citm-citm-server
+  namespace: citm
 spec:
   ports:
   - name: "tcp-http-8080-citm-server"
