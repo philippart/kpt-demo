@@ -5,3 +5,6 @@ helmCharts:
   version: 1.0.4
   releaseName: app
   namespace: cert-manager
+  valuesInline:
+    ingress:
+      enabled: "false"
