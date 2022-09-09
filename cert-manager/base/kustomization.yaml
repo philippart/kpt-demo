@@ -1,7 +1,7 @@
 # ./base/kustomization.yaml
 helmCharts:
-- name: cmdb
+- name: cskm
   repo: https://repo.cci.nokia.net/artifactory/csf-helm-stable/
-  version: 8.3.0
-  releaseName: cmdb
+  version: 6.2.1
+  releaseName: cskm
   namespace: cert-manager
