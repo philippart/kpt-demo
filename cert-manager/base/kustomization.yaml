@@ -1,7 +1,12 @@
 # ./base/kustomization.yaml
 helmCharts:
+- name: cert-manager-crds
+  repo: https://repo.cci.nokia.net/artifactory/csf-helm-stable/
+  version: 1.0.5
+  releaseName: cm-crds
+  namespace: cert-manager
 - name: cert-manager
   repo: https://repo.cci.nokia.net/artifactory/csf-helm-stable/
   version: 2.0.9
-  releaseName: cert-manager
+  releaseName: cm
   namespace: cert-manager
