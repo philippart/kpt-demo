@@ -1,7 +1,7 @@
 # ./base/kustomization.yaml
 helmCharts:
-- name: cskm
+- name: sample-app
   repo: https://repo.cci.nokia.net/artifactory/csf-helm-stable/
-  version: 6.2.1
-  releaseName: cskm
+  version: 1.0.6
+  releaseName: app
   namespace: cert-manager
