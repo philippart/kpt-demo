@@ -1,7 +1,7 @@
 # minecraft
 
 ## Description
-kpt package for minecraft deployment
+minecraft description
 
 ## Usage
 
