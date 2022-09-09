@@ -1,0 +1,23 @@
+# this must be a rootsync repo since the cert-manager helm chart creates both namespace and cluster resources (e.g. cluster roles and role bindings)
+apiVersion: configsync.gke.io/v1beta1
+kind: RootSync
+metadata:
+  name: citm-sync
+  namespace: config-management-system
+spec:
+  sourceFormat: unstructured
+  git:
+    repo: https://github.com/philippart/kpt-demo/
+    branch: main
+    dir: citm
+    auth: token
+    proxy: http://135.245.192.7:8000
+    secretRef:
+      name: gh-creds
+  override:
+    enableShellInRendering: true
+    resources:
+      - containerName: git-sync
+        memoryRequest: "100Mi"
+      - containerName: reconciler
+        memoryRequest: "100Mi"
