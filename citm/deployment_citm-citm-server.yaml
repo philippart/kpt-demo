@@ -54,7 +54,7 @@ spec:
           requests:
             cpu: 120m
             ephemeral-storage: 120Mi
-            memory: 256Mi
+            memory: 120Mi
         volumeMounts:
         - name: tlskey
           mountPath: /tmp/ssl

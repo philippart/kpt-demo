@@ -18,4 +18,4 @@ helmCharts:
           requests:
             memory: 120Mi
             cpu: 120m
-
+            ephemeral-storage: 120Mi
