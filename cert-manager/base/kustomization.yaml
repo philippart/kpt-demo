@@ -1,7 +1,7 @@
 # ./base/kustomization.yaml
 helmCharts:
 - name: cert-manager
-  repo: https://charts.jetstack.io
-  version: v1.5.3
-  releaseName: my-cert-manager
+  repo: https://repo.cci.nokia.net/artifactory/csf-helm-stable/
+  version: 2.0.9
+  releaseName: cert-manager
   namespace: cert-manager
