@@ -52,8 +52,8 @@ spec:
             ephemeral-storage: 200Mi
             memory: 512Mi
           requests:
-            cpu: 250m
-            ephemeral-storage: 200Mi
+            cpu: 120m
+            ephemeral-storage: 120Mi
             memory: 256Mi
         volumeMounts:
         - name: tlskey

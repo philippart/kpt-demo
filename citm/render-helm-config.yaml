@@ -12,3 +12,10 @@ helmCharts:
   templateOptions:
     releaseName: citm
     namespace: citm
+    valuesInline:
+      httpServer:
+        resources:
+          requests:
+            memory: 120Mi
+            cpu: 120m
+
