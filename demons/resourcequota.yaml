@@ -5,6 +5,8 @@ metadata: # kpt-merge: example/default
   namespace: demons
   annotations:
     internal.kpt.dev/upstream-identifier: '|ResourceQuota|example|default'
+  labels:
+    environment: demo
 spec:
   hard:
     cpu: "40"

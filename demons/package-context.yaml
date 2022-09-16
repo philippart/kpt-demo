@@ -5,5 +5,7 @@ metadata: # kpt-merge: /kptfile.kpt.dev
   annotations:
     config.kubernetes.io/local-config: "true"
     internal.kpt.dev/upstream-identifier: '|ConfigMap|default|kptfile.kpt.dev'
+  labels:
+    environment: demo
 data:
   name: demons

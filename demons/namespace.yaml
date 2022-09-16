@@ -4,4 +4,6 @@ metadata: # kpt-merge: /example
   name: demons
   annotations:
     internal.kpt.dev/upstream-identifier: '|Namespace|default|example'
+  labels:
+    environment: demo
 spec: {}

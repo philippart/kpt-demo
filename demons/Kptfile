@@ -4,7 +4,9 @@ metadata: # kpt-merge: /demons
   name: demons
   annotations:
     config.kubernetes.io/local-config: "true"
-    internal.kpt.dev/upstream-identifier: 'kpt.dev|Kptfile|default|demons'
+    internal.kpt.dev/upstream-identifier: kpt.dev|Kptfile|default|demons
+  labels:
+    environment: demo
 upstream:
   type: git
   git:

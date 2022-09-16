@@ -4,7 +4,9 @@ metadata: # kpt-merge: /update-rolebinding
   name: update-rolebinding
   annotations:
     config.kubernetes.io/local-config: "true"
-    internal.kpt.dev/upstream-identifier: 'fn.kpt.dev|ApplyReplacements|default|update-rolebinding'
+    internal.kpt.dev/upstream-identifier: fn.kpt.dev|ApplyReplacements|default|update-rolebinding
+  labels:
+    environment: demo
 replacements:
 - source:
     kind: ConfigMap
@@ -17,5 +19,5 @@ replacements:
     fieldPaths:
     - subjects.[kind=Group].name
     options:
-      delimiter: '.'
+      delimiter: .
       index: 0
