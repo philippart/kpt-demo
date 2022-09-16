@@ -22,6 +22,9 @@ info:
   description: kpt package for provisioning namespace
 pipeline:
   mutators:
+  - image: gcr.io/kpt-fn/set-labels:v0.1
+    configMap:
+      environment: demo
   - image: gcr.io/kpt-fn/set-namespace:v0.4.1
     configPath: package-context.yaml
   - image: gcr.io/kpt-fn/apply-replacements:v0.1.1
