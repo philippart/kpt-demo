@@ -2,7 +2,7 @@ apiVersion: v1
 kind: ResourceQuota
 metadata: # kpt-merge: example/default
   name: default
-  namespace: example
+  namespace: demons
   annotations:
     internal.kpt.dev/upstream-identifier: '|ResourceQuota|example|default'
 spec:
