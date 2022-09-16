@@ -1,0 +1,21 @@
+apiVersion: fn.kpt.dev/v1alpha1
+kind: ApplyReplacements
+metadata: # kpt-merge: /update-rolebinding
+  name: update-rolebinding
+  annotations:
+    config.kubernetes.io/local-config: "true"
+    internal.kpt.dev/upstream-identifier: 'fn.kpt.dev|ApplyReplacements|default|update-rolebinding'
+replacements:
+- source:
+    kind: ConfigMap
+    name: kptfile.kpt.dev
+    fieldPath: data.name
+  targets:
+  - select:
+      name: app-admin
+      kind: RoleBinding
+    fieldPaths:
+    - subjects.[kind=Group].name
+    options:
+      delimiter: '.'
+      index: 0

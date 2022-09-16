@@ -1,0 +1,15 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata: # kpt-merge: example/app-admin
+  name: app-admin
+  namespace: example
+  annotations:
+    internal.kpt.dev/upstream-identifier: 'rbac.authorization.k8s.io|RoleBinding|example|app-admin'
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: app-admin
+subjects:
+- apiGroup: rbac.authorization.k8s.io
+  kind: Group
+  name: example.admin@bigco.com
